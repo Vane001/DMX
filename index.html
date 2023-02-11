@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Envio de Datos de Web a Arduino Uno</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Barra LPD8806</h1>
+            <div class="botones">
+                <button type="button" class="btn btn-primary" onclick="boton(1)">ColorChase</button>
+                <button type="button" class="btn btn-primary" onclick="boton(2)">TheaterChase</button>
+                <button type="button" class="btn btn-primary" onclick="boton(3)">ColorWipe</button>
+            </div>
+            <div class="botones">
+                <button type="button" class="btn btn-primary" onclick="boton(4)">Rainbow</button>
+                <button type="button" class="btn btn-primary" onclick="boton(5)">RainbowCycle</button>
+                <button type="button" class="btn btn-primary" onclick="boton(6)">TheaterChaseRainbow</button>
+            </div>
+            <h2 id="texto">Dato Enviado:</h2>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
